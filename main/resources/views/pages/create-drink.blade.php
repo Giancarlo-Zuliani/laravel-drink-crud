@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    <form action="{{route('edit-drink')}}" method="post">
+    <form action="{{route('store-drink')}}" method="post">
         @csrf
         @method('post')
          
@@ -14,7 +14,7 @@
             <label for="ingredient_three">ingredient : </label>
             <input type="text" name="ingredient_three">
             <label for="alcool">ingredient : </label>
-            <input type="numeric" name="alcool"> 
+            <input type="number" name="alcool"> 
             <button type="submit">submit</button>
     
     </form>

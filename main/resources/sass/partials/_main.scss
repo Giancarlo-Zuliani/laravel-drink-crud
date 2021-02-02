@@ -1,0 +1,21 @@
+main {
+    width: 80%;
+    margin: 25px auto;
+    ul {
+        list-style: none;
+        li {
+            border-top: solid black 1px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 15px;
+            color: $mainbackcolor;
+            @include flex(row, space-between, center);
+            height: 40px;
+            text-align: left;
+            a {
+                color: black;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
