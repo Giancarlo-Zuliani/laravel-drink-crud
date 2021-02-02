@@ -19,3 +19,41 @@ main {
         }
     }
 }
+
+.recipecard {
+    @include flex(column, center, center);
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+    @include absolute(60%, 50%, -50%);
+    background-color: $mainbackcolor;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px;
+    * {
+        display: block;
+        width: 60%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    label {
+        font-size: 1.8rem;
+        color: $headerbackcolor;
+    }
+    input {
+        padding: 8px;
+        background-color: $txtcolor;
+        border: none;
+        border-radius: 5px;
+    }
+    button {
+        background-color: $txtcolor;
+        color: $headerbackcolor;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px;
+        border: none;
+        &hover {
+            cursor: pointer;
+        }
+    }
+}

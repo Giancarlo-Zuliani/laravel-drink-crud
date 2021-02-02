@@ -4,3 +4,10 @@
     justify-content: $just;
     flex-direction: $dir;
 }
+
+@mixin absolute($top, $left, $trans) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($trans, $trans);
+}

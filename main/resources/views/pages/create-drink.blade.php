@@ -1,10 +1,12 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    <form action="{{route('store-drink')}}" method="post">
-        @csrf
-        @method('post')
-         
+    <section class="recipecard">
+
+        <form action="{{route('store-drink')}}" method="post">
+            @csrf
+            @method('post')
+            
             <label for="name">Name : </label>
             <input type="text" name="name" placeholder="name">
             <label for="ingredient_one">ingredient : </label>
@@ -16,7 +18,8 @@
             <label for="alcool">ingredient : </label>
             <input type="number" name="alcool"> 
             <button type="submit">submit</button>
-    
-    </form>
-
+            
+        </form>
+        
+    </section>
 @endsection
