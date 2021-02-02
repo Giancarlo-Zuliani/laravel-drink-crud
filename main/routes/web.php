@@ -14,3 +14,5 @@ Route::get('/edit/{id}' , 'DrinkController@edit')
     -> name('edit-drink');
 Route::post('/update/{id}' , 'DrinkController@update')
     -> name('update-drink');
+Route::get('/delete/{id}' , 'DrinkController@destroy')
+    -> name('delete-drink');
