@@ -13,4 +13,9 @@ class Drink extends Model
         'ingredient_three',
         'alcool'
     ];
+
+    public function bottle(){
+
+        return $this -> belongsTo(Bottle::class);
+    }
 }

@@ -15,6 +15,7 @@ class CreateDrinksTable extends Migration
     {
         Schema::create('drinks', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('bottle_id') -> unsigned();
             $table->string('name',255);
             $table->string('ingredient_one',2550);
             $table->string('ingredient_two' , 255);
